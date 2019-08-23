@@ -1,0 +1,45 @@
+// Navbar
+.bg-darken
+{
+    background-color: $navbar_default_background;
+}
+// Dropdown Menu
+.dropdown-menu
+{
+    margin-top: 8px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+// Toggler icon
+.navbar-toggler
+{
+    border: none;
+    &:focus
+    {
+        outline: none;
+    }
+}
+// If the menu gets smaller than 991.98px it will collapse.
+@media (max-width: 991.98px)
+{
+    .dropdown-menu
+    {
+        background-color: transparent;
+        box-shadow: 0;
+        color: $navbar_default_text_color;
+        .dropdown-item
+        {
+            color: $navbar_default_text_color;
+            &:hover
+            {
+                color: $navbar_default_text_color;
+                background-color: transparent;
+            }
+        }
+    }
+}
+.screen-reader-text
+{
+    display: none;
+}

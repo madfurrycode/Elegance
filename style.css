@@ -11,3 +11,148 @@ Text Domain: elegance
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+body {
+  background-color: #eee !important;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+.bg-darken {
+  background-color: #222222 !important;
+}
+
+.dropdown-menu {
+  margin-top: 8px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    background-color: transparent;
+    box-shadow: 0;
+    color: #ffffff;
+  }
+
+  .dropdown-menu .dropdown-item {
+    color: #ffffff;
+  }
+
+  .dropdown-menu .dropdown-item:hover {
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+# Site Footer
+--------------------------------------------------------------*/
+
+.site-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #222222 !important;
+}
+
+.site-footer .site-info {
+  color: #ffffff;
+  text-align: center;
+}
+
+.site-footer .site-info a {
+  color: #ffffff;
+}
+
+.site-footer .site-info a:hover {
+  color: #966bd6;
+  text-decoration: none;
+}
+
+.site-footer .site-info p {
+  margin-bottom: 0px;
+}
+
+/*--------------------------------------------------------------
+# Article
+--------------------------------------------------------------*/
+
+.article-container {
+  padding: 30px;
+  background-color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget-container {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.widget {
+  margin-bottom: 30px;
+}
+
+.widget .widget-title {
+  font-size: 30px;
+}
+
+.widget ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.widget ul li {
+  position: relative;
+  display: block;
+  padding: 0.75rem 3px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 0;
+}
+
+.widget ul li a {
+  color: #333;
+}
+
+.widget ul li a:hover {
+  color: #966bd6;
+  text-decoration: none;
+}
+
+.elegance-search-form .form-control {
+  border-radius: 0;
+}
+
+/*--------------------------------------------------------------
+# Site
+--------------------------------------------------------------*/
+
+.site-content {
+  margin-top: 30px;
+}
+

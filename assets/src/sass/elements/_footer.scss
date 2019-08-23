@@ -1,0 +1,24 @@
+.site-footer
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $footer_default_background;
+  .site-info
+  {
+    color: $footer_default_text_color;
+    text-align: center;
+    a
+    {
+      color: $footer_default_text_color;
+      &:hover
+      {
+        color: $footer_default_link_color;
+        text-decoration: none;
+      }
+    }
+    p
+    {
+      margin-bottom: 0px;
+    }
+  }
+}

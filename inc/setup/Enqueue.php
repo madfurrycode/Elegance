@@ -10,27 +10,33 @@
  * 
  */
 
-function elegance_scripts()
-{
+if ( ! function_exists( 'elegance_scripts' ) ) :
     /**
-     * Stylesheet Enqueue
-     * @version 1.0.0
+     * Checking if the function exists.
      */
-    wp_enqueue_style( 'elegance-style', get_stylesheet_uri() );
-    wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/dist/css/bootstrap.min.css', array(), '4.3.1', 'all');
-    wp_enqueue_style( 'font-awesome-css', get_template_directory_uri() . '/assets/dist/fonts/font-awesome.min.css', array(), '4.0.0', 'all');
+    function elegance_scripts()
+    {
+        /**
+         * Stylesheet Enqueue
+         * @version 1.0.0
+         */
+        wp_enqueue_style( 'elegance-style', get_stylesheet_uri() );
+        wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/dist/css/bootstrap.min.css', array(), '4.3.1', 'all');
+        wp_enqueue_style( 'font-awesome-css', get_template_directory_uri() . '/assets/dist/fonts/font-awesome.min.css', array(), '4.0.0', 'all');
 
-    /**
-     * Scripts Enqueue
-     * @version 1.0.0
-     */
-    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/dist/js/bootstrap.min.js', array( 'jquery' ), '4.3.1', true );
+        /**
+         * Scripts Enqueue
+         * @version 1.0.0
+         */
+        wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/dist/js/bootstrap.min.js', array( 'jquery' ), '4.3.1', true );
 
-    /**
-     * Woocommerce Stylesheet
-     * @version 1.0.0
-     */
-    wp_enqueue_style( 'woocommerce-css', get_template_directory_uri() . '/assets/dist/css/woocommerce.css', array(), '1.0.0', 'all');
-    
-}
+        /**
+         * Woocommerce Stylesheet
+         * @version 1.0.0
+         */
+        wp_enqueue_style( 'woocommerce-css', get_template_directory_uri() . '/assets/dist/css/woocommerce.css', array(), '1.0.0', 'all');
+        
+    }
+endif;
+
 add_action( 'wp_enqueue_scripts', 'elegance_scripts' );

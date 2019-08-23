@@ -13,21 +13,24 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'elegance' ) ); ?>">
+			<div class="container">
+				<a href="<?php echo esc_url( __( 'https://tristanelliott.co.za/', 'elegance' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'elegance' ), 'WordPress' );
+					printf( esc_html__( 'Proudly powered by %s', 'generate' ), 'WordPress' );
 				?>
-			</a>
-			<span class="sep"> | </span>
+				</a>
+				<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'elegance' ), 'elegance', '<a href="http://tristanelliott.co.za">Tristan Elliott</a>' );
+					printf( esc_html__( 'Theme: %1$s by %2$s.', 'elegance' ), 'Elegance', '<a href="http://tristanelliott.co.za">Tristan Elliott</a>' );
 				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+			</div>
+		</div>
+	</footer>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
