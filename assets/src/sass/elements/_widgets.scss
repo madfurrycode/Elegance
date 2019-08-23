@@ -37,6 +37,7 @@
       }
     }
   }
+
 }
 // Search Bar
 .elegance-search-form
@@ -46,3 +47,22 @@
         border-radius: 0;
     }
 }
+  // Contact Form 7 ( Alert )
+  .alert
+  {
+    border: 0!important;
+    border-radius: 0!important;
+  }
+  .alert-primary
+  {
+    color: #563d7c!important;
+    background-color: #ffffff!important;
+    border-left: 5px solid #563d7c!important;
+    a {
+      color: #563d7c!important;
+      &:hover {
+        color: #333333!important;
+        text-decoration: none;
+      }
+    }
+  }

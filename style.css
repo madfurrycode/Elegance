@@ -19,6 +19,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 body {
   background-color: #eee !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
 }
 
 /*--------------------------------------------------------------
@@ -146,6 +148,26 @@ body {
 
 .elegance-search-form .form-control {
   border-radius: 0;
+}
+
+.alert {
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.alert-primary {
+  color: #563d7c !important;
+  background-color: #ffffff !important;
+  border-left: 5px solid #563d7c !important;
+}
+
+.alert-primary a {
+  color: #563d7c !important;
+}
+
+.alert-primary a:hover {
+  color: #333333 !important;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
