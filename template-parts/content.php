@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="elegance-article mb-5 <?php post_class(); ?>">
 	<div class="article-container">
 		<header class="entry-header">
 			<?php
@@ -24,12 +24,15 @@
 				<div class="entry-meta">
 					<?php
 					elegance_posted_on();
+					?>
+						<span class="entry-meta-devider ml-1 mr-1">|</span>
+					<?php
 					elegance_posted_by();
 					?>
 				</div><!-- .entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->
-
+		<hr>
 		<?php elegance_post_thumbnail(); ?>
 
 		<div class="entry-content">
@@ -53,7 +56,7 @@
 			) );
 			?>
 		</div><!-- .entry-content -->
-
+		<hr>
 		<footer class="entry-footer">
 			<?php elegance_entry_footer(); ?>
 		</footer><!-- .entry-footer -->

@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="elegance-article mb-5 <?php post_class(); ?>">
 	<div class="article-container">
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -27,7 +27,7 @@
 			) );
 			?>
 		</div><!-- .entry-content -->
-
+				
 		<?php if ( get_edit_post_link() ) : ?>
 			<footer class="entry-footer">
 				<?php
